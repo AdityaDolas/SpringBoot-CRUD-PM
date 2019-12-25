@@ -19,12 +19,12 @@ public class ProductService {
 		repo.save(product);
 	}
 	
-	public Product get(Long id) {
-		return repo.findById(id).get();
+	public Product get(int id) {
+		return repo.findById((long) id).get();
 	}
 	
-	public void delete(Long id) {
-		repo.deleteById(id);
+	public void delete(int id) {
+		repo.deleteById((long) id);
 	}
 	
 }
